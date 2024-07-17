@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <script src="./node.js"></script>
+    <title>Login Page</title>
+</head>
+<body>
+    <main class="mainClass"> 
+        <form id="loginForm" method="post"> <!-- method = post means sensitive/private data (for security)-->
+            <!--Method = post / get | get is for small data | data on URL, anyone can read it-->
+            <h1>Login</h1>
+            <div class="InputForm">
+                
+                <label for="userName">Username</label> <!--Link the label with the input-->
+                <input id="userName" size="20"> <!--text size 20 characters on screen -->
+            </div>
+
+            <div class="InputForm">
+                <label for="passWord">Password</label>
+                <input type="password" id="passWord" size="20"> <!--text size 20 characters on screen -->
+            </div>
+            <div class="InputForm">
+                <button class="ButtonClass" type="button" onclick="logInNavigation()">Log In</button> <!--Must add type so that the javascript will run w/o error-->
+                <button class="ButtonClass" type="button" onclick="signInNavigation()">Sign In</button>
+            </div>
+            <div id="forgotPass">
+                <a href="">Forgot your password</a>
+            </div>
+        </form>
+        
+    </main>  
+</body>
+</html>

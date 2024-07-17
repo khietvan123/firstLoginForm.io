@@ -1,0 +1,77 @@
+body{
+    background-image:url('background.jpg');
+    height: 100%; /*Full height of the page*/
+    background-position: center center ;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    
+}
+
+.mainClass
+{
+    
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    display: flexbox;
+    
+}
+
+#loginForm
+{
+    height:300px;  /*ask*/
+    width: 180px;
+    padding:60px;
+    border: 1px black solid;
+    border-radius: 5px;
+    position: absolute;  /*Align in the middle of the page start here*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(0, 0, 0);
+    background-color: white;
+    box-shadow: 2px 3px 10px #0e064b;
+}
+
+h1
+{
+    margin-top: 10px;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+     
+}
+.InputForm
+{
+    padding: 10px;
+}
+
+#forgotPass{
+    text-align: center;
+    margin: 10px;
+}
+
+.ButtonClass
+{
+    
+    margin: 0 10px;
+    height: 20px;
+    display: inline-block;
+    border: none;
+    border-radius: 3px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    box-shadow: 1px 1px 1px #888888 ;
+    /*Animation*/
+    transition: trasnform 0.2s ease;
+}
+
+button:active{
+        /*Animation*/
+        cursor: pointer;
+        transform: scale(0.96);
+}
+
+input{
+    border: 1px solid black;
+    border-radius: 4px;
+    width: 100%;
+    
+}
